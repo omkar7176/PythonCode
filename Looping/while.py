@@ -21,7 +21,7 @@ print(f"It is your {age} years old.")
 
 food = input("Enter the like (q to quiet): ")
 
-while not food == "q":
+while food != "q":
     print(f"You like {food}")
     food = input("Enter the another food like u (q to quiet): ")
 
