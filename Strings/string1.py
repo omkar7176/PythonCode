@@ -2,10 +2,16 @@
 
 # 1.center()
 text = "Python"
-addtext = text.center(12,"*")
+addtext = text.center(12,"*")  #(12, "*") --> 12 which mandatory to insert it & the caluation to add it is
+                                # 12 = left side: 3 star + right side: 3 + string_len -> python:6
+                                   # = 3+3+6 = 12
 print(addtext)
-
 # OUTPUT : ***Python***
+
+
+
+
+
 
 # ** String Spliting **
 
@@ -23,6 +29,10 @@ print(fruit.split(','))
 # OUTPUT: ['apple', ' orange', ' grapes', ' banana', 'watermelon']
 
 
+
+
+
+
 # **  Eliminating Unnecessary Character of a String  -- strip() **
 text = "!!!@@Hello World!!@@"
 print(text.strip("!@"))
@@ -30,6 +40,11 @@ print(text.strip("!@"))
 # 2nd way
 another_vari = text.strip("!@")
 print(another_vari)
+
+
+
+
+
 
 
 # ** Search  the word in string or in substring
