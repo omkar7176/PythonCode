@@ -56,3 +56,41 @@ if a in name:
     print("Yess")
 else:
     print("No")
+
+
+
+
+
+# 6. Range of Index
+    
+# Syntax: name = [Start:end:JumIndex]
+    
+color = ("red", "blue", "brown", "white", "orange", "black", "yellow")
+print(color[2:5])
+print(color[-5:-1])
+print(len(color))
+
+
+# Print all elements from given index till the end
+
+comp = ("Google", "facebook", "oracle", "Microsoft", "Apple", "Amazon", "flipkart")
+print(comp[2:])
+print(comp[:3])
+print(len(comp))
+
+
+# Print alternative Values
+name = ("Om", "Ram", "Shyam", "Joy","Roy","John", "Shon", "Sam", "Annu")
+print(name[::2])
+# OP: There have difference of 2
+# ('Om', 'Shyam', 'Roy', 'Shon')
+print(name[-8:-1:2])
+# OP: ('Om', 'Shyam', 'Roy', 'Shon')
+
+
+# Printing every third consecutive eriting in given range.
+
+name = ("Om", "Ram", "Shyam", "Joy","Roy","John", "Shon", "Sam", "Annu")
+print(name[1:8:3])
+
+# OP: ('Ram', 'Roy', 'Sam')
