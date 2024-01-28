@@ -136,3 +136,30 @@ info = {}
 info = dict({1: 'Shreyash', 2: 22, 3: 'CS', 4: 'IIT Madras'})
 print(info)
 # OP: {1: 'Jayesh', 2: 22, 3: 'CS', 4: 'IIT Madras'}
+
+
+
+
+
+
+# remove the element from the dict using  pop().
+Student = {1 : "Omkar", 2: "Sanket", 3:"Kunal", 4: "Shreyash", 5: "John"}
+Student.pop(5)
+print(Student)
+#OP: {1: 'Omkar', 2: 'Sanket', 3: 'Kunal', 4: 'Shreyash'}
+candidate = Student.pop(5)
+print(candidate)
+#OP: John
+
+
+
+
+
+
+# Deleting Elements using ‘del’ Keyword
+Student = {1 : "Omkar", 2: "Sanket", 3:"Kunal", 4: "Shreyash", 5: "John"}
+del(Student[5])
+print(Student)
+#OP: {1: 'Omkar', 2: 'Sanket', 3: 'Kunal', 4: 'Shreyash'}
+
+#**___Completed___**#
