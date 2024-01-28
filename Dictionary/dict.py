@@ -8,7 +8,9 @@ info = {1 : "Ram", 2 : "Delhi", 3 : "Amazon"}
 print(Details)
 print(info)
 
-
+# Creating the dictionary using function --> dict()
+Student = dict(Name= "Omkar", Field= "Computer Science", Age= 22, Comp="Google")
+print(Student)
 
 
 # Accessing the Dictionary items
