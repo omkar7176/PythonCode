@@ -17,3 +17,5 @@ while(x%2)==0:
     break
 else:
     print("The given number is Odd.")
+
+    
