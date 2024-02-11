@@ -1,3 +1,4 @@
+# Solution 1:
 num = int(input("Enter the number: "))
 
 if num == 1:

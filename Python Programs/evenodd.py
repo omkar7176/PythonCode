@@ -3,12 +3,11 @@ x = int(input("Enter the number: "))
 # Using if-else
 if x%2 == 0:
     print(f"The number {x} is even")
-else:
+elif x%2 != 0:
     print(f"The number {x} is odd")
+else:
+    print("Even & Odd number program")
 
-#optinal:
-# elif x%2 != 0:
-#     print(f"The number {x} is odd")
 
 
 #Using while loop
