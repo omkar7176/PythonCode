@@ -48,6 +48,17 @@ print(colorB)
 
 
 
+
+# *** Concatenation of two list, you can add number of elements in usign two list ***
+colorA = ["red", "green"]
+colorB = ["white", "purple"]
+colorC = colorA + colorB
+print(colorC)
+#OP: ['red', 'green', 'white', 'purple']
+
+
+
+
 ''' 4.sort() --> sort the numbers in ascending order & alphabet letters are also sort in ascending
                  the capital letter will in first. '''
 
@@ -59,8 +70,8 @@ print(a)
 b = ["Omkar", "Ram", "abhi", "Rutik", "Kunal", "saket"]
 b.sort()
 print(b)
-
 #OP: ['Kunal', 'Omkar', 'Ram', 'Rutik', 'abhi', 'saket']
+
 # first priority to capital letter & then sort
 
 # ** If you want to print in descending order we must give -- sort(reverse=True) -- as a parameter in the sort method.
@@ -101,7 +112,8 @@ print(x)
 
 animal = ["cat", "dog", "horse", "cow", "sheep", "goat"]
 animal.remove("sheep")
-# print(animal)
+print(animal)
+# OP: ['cat', 'dog', 'horse', 'cow', 'goat']
 
 
 
@@ -111,7 +123,9 @@ animal.remove("sheep")
 numbers = [2,4,6,8,10,12,14,16,18,20]
 x = numbers.copy()
 print(x)
-# print(numbers)
+print(numbers)
+# OP: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+#     [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
 
 
@@ -119,10 +133,10 @@ print(x)
 
 ''' 8. count(): Return the number of times the value 9 appears in the num list'''
 
-num = [1, 4, 2, 9, 7, 8, 9, 3, 1]
+num = [1, 4, 2, 9, 7, 8, 9, 3, 1, 1]
 x = num.count(9)
-# print(x)
-# OP: 2
+print(x)
+# OP: 3
 
 
 
@@ -133,7 +147,8 @@ x = num.count(9)
 
 test = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 test.reverse()
-# print(test)
+print(test)
+# OP: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 
 
