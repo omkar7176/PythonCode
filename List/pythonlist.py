@@ -3,6 +3,8 @@
 ''' Duplicate values in list '''
 color = ["red", "yellow", "blue", "white", "red"]  #--> red
 print(color)
+# OP: ['red', 'yellow', 'blue', 'white', 'red']
+
 
 
 
@@ -10,6 +12,7 @@ print(color)
  ''' length of the list ''' 
 name = ["Omkar", "Ram","Shyam", "John", "Rocky"]
 print(len(name))
+# OP : 5
 
 
 
@@ -19,6 +22,7 @@ print(len(name))
 string = ["Omkar", 21, True, 1.23, 'r']
 #  str + int + boolean + float + character 
 print(string)
+# OP: ['Omkar', 21, True, 1.23, 'r']
 
 
 
@@ -27,6 +31,7 @@ print(string)
 
 name = ["Omkar", 21, True, 12.50, 'r']
 print(type(name))
+# OP: <class 'list'>
 
 
 
@@ -35,6 +40,8 @@ print(type(name))
 name = list(("John", "ronny", "alex", "rocky"))
 print(name)
 print(type(name))
+# OP: ['John', 'ronny', 'alex', 'rocky']
+#     <class 'list'>
 
 
 
@@ -42,27 +49,39 @@ print(type(name))
  '''Access the items from the list '''
 element = ["mouse", "keyboard", "monitor","headphone", "laptop", "table", "stand", "mike"]
 print(element[2])
+# OP: monitor
 
 
 ''' Range of index & access it, also called as string slicing '''
 
 hardware = ["mouse", "keyboard", "monitor","headphone", "laptop", "table", "stand", "mike"]
-
 print(hardware[2:6])
+# OP: ['monitor', 'headphone', 'laptop', 'table']
+
 
 
 ''' leaving out of the staring & ending value '''
 
 print(hardware[3:])
+# OP: ['headphone', 'laptop', 'table', 'stand', 'mike']
+
 print(hardware[:3])
+# OP: ['mouse', 'keyboard', 'monitor']
 
 
 ''' negtive indexing '''
 
 print(hardware[-5:-2])
+# OP: ['headphone', 'laptop', 'table']
+
 print(hardware[-4:])
+# OP: ['laptop', 'table', 'stand', 'mike']
+
 print(hardware[:-2])
+# OP: ['mouse', 'keyboard', 'monitor', 'headphone', 'laptop', 'table']
+
 print(hardware[::2])
+# OP: ['mouse', 'monitor', 'laptop', 'stand']
 
 
 
