@@ -1,19 +1,16 @@
 #                         ** Sets Methods **
 
 # 1.add(): Adds a given element to a set.
-# 2.clear(): Removes all elements from the set.
-# 3.copy(): 
-# 4.difference(): 
-# 5.difference_update(): 
-# 6.discard(): Removes the element from the set.
-# 7.intersection():
+# 2.update(): Adds elements to the set
+# 3.remove(): Removes the element from the set.
+# 4.discard(): Removes the element from the set.
+# 5.pop(): remove the last element from the Set.
+# 6.clear(): Removes all elements from the set.
+# 7.union(): Returns a set that has the union of all sets.
 # 8.intersection_update()
-# 9.pop()
-# 10.remove(): Removes the element from the set.
-# 11.union(): Returns a set that has the union of all sets.
-# 12.update(): Adds elements to the set
-# 13.symmetric_difference_update()
-# 14.symmetric_difference()
+# 9.intersection():
+# 10.symmetric_difference_update()
+# 11.symmetric_difference()
 
 
 
@@ -93,8 +90,89 @@ print(col)
 
 
 
-# 6: clear():
+# 6. clear():
 ab = {"om", "john", "shon", "monty"}
 ab.clear()
 print(ab)
-OP: set()
+# OP: set()
+
+
+
+
+
+
+# 7. del 
+# Del keyword is used to delete the set completely
+abc = {12,14, 21.5, "Omk", "ram"}
+del abc
+
+
+
+
+
+
+# 8. union():
+# How to join the two sets by using union() and update()
+# 1. union()--> it needs to create the 3rd variable to combine the two sets. otherwise it will show you the wrong output.
+
+colA = {'o', 'k'}
+colB = {'B', 'y', 'e'}
+colC = colA.union(colB)
+print(colC)
+# OP: {'e', 'y', 'o', 'B', 'k'}
+
+
+# 2. update(): No need to create the 3rd varible to commbine two sets becoz after creating the 3rd variable, it shows the "none" OP.
+
+colA.update(colB)
+print(colA)
+# OP: {'B', 'e', 'o', 'y', 'k'}
+
+
+
+
+
+# 9: intersection_update(): Keep only duplicate items
+# No need to create the 3rd varible otherwise it shows "None" OP.
+x = {"Apple", "Cherry", "Grapes"}
+y = {"PineApple", "Apple", "Banana"}
+x.intersection_update(y)
+print(x)
+# OP: {'Apple'}
+# Note: It shows the only duplicate elemnts in sets.
+
+
+
+
+
+
+# 10. intersection(): 
+# using intersection() method it needs to create the 3rd variable.
+z = x.intersection(y)
+print(z)
+# OP: {'Apple'}
+# Note: It shows the only duplicate elemnts in sets.
+
+
+
+
+
+# 11. symmetric_difference_update():
+# Keep all, but NOT the duplicates of common items
+
+colorA = {"Red", "Black", "White"}
+colorB = {"Orange", "Green", "White"}
+colorA.symmetric_difference_update(colorB)
+print(colorA)
+# OP: {'Red', 'Black', 'Green', 'Orange'}
+
+
+
+
+
+
+# 12. symmetric_difference():
+
+z=colorA.symmetric_difference(colorB)
+print(z)
+#OP: {'Green', 'Black', 'Orange', 'Red'}
