@@ -1,0 +1,19 @@
+
+
+class teacher:
+    def __init__(self, name, quali):
+        self.name = name
+        self.quali = quali
+    def show(self):
+        print(f"{self.name}")
+        
+class student(teacher):
+    def __init__(self, name, quali, loc, comp):
+        super().__init__(name, quali)
+        self.loc = loc
+        self.comp = comp
+    def showdetails(self):
+        print(f"Stud name: {self.name}, \nQuali: {self.quali}, \nLocation: {self.loc}, \nCompany: {self.comp}")
+
+a = student("Rutuja", "MCA", "India", "Microsoft")
+a.showdetails()
